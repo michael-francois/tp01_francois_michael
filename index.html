@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TP01</title>
+    <!-- Copyright © 2014 Monotype Imaging Inc. All rights reserved -->
+    <link href="https://cdn.jsdelivr.net/npm/boosted@5.2.0/dist/css/orange-helvetica.min.css" rel="stylesheet" integrity="sha384-A0Qk1uKfS1i83/YuU13i2nx5pk79PkIfNFOVzTcjCMPGKIDj9Lqx9lJmV7cdBVQZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/boosted@5.2.0/dist/css/boosted.min.css" rel="stylesheet" integrity="sha384-CYwBBOBitXWralvRBTTEteu86YHHydT/+Wsv4kmxP6oF/SaesPQeMxLbblEUyZf/" crossorigin="anonymous">
+  
+    <!-- Copyright © 2014 Monotype Imaging Inc. All rights reserved -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boosted@4.6.2/dist/css/orangeHelvetica.min.css" integrity="sha384-6rPwIH6o8roADEALG0VtZOLfj0bDJ8KUOX7N+cjS+7NkwAaBQOZwRPOIiKWJa0aL" crossorigin="anonymous">
+    <!-- Copyright © 2016 Orange SA. All rights reserved -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boosted@4.6.2/dist/css/orangeIcons.min.css" integrity="sha384-XQ+QuxWl/eBTAPcvP8xjhUXg+GB+kArKZpnDyXUz1pLOe6yAfZzxkSygkYxNfKHT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boosted@4.6.2/dist/css/boosted.min.css" integrity="sha384-gf+Y5XR9AaDz8jxrG8h6a3BYpN7fOpxA97a0i8QHgwnRKNOuahm7ZQfqzxaNW+aJ" crossorigin="anonymous">
+</head>
+
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-md" role="navigation">
+    <div class="container-fluid flex-sm-wrap flex-md-nowrap">
+      <a class="navbar-brand" href="#">
+        <img src="https://c.woopic.com/logo-orange.png" alt="Orange" title="Back to homepage" width="50" height="50" loading="lazy"/>
+        <span id="design" class="h1">Mon super Form Corporate</span>
+      </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 mb-1">
+            <label for="civility" class="form-label">Civilité</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">M.</option>
+                <option value="2">Mme.</option>
+            </select>
+          </div>
+          <div class="col-md-5 mb-1">
+            <label for="lastname" class="form-label">Nom</label>
+            <input type="email" class="form-control" id="lastname" pattern="[A-Z][a-z]+">
+          </div>
+          <div class="col-md-5 mb-1">
+            <label for="firstname" class="form-label">Prénom</label>
+            <input type="email" class="form-control" id="firstname" pattern="[A-Z][a-z]+">
+          </div>
+        </div>
+        <div class="mb-1">
+            <label for="adress" class="form-label">Adresse</label>
+            <input type="email" class="form-control" id="adress">
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-1">
+                <label for="postal" class="form-label">Code Postal</label>
+                <input type="text" class="form-control" id="postal" pattern="\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$">
+            </div>
+            <div class="col-md-8 mb-1">
+                <label for="town" class="form-label">Ville</label>
+                <input type="text" class="form-control" id="town">
+            </div>
+        </div>
+        <div class="mb-1">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 mb-1">
+                <label for="login" class="form-label">Identifiant</label>
+                <input type="text" class="form-control" id="login">
+            </div>
+            <div class="col-md-6 mb-1">
+                <label for="password" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" id="password" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary mt-2">Envoyer</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/boosted@5.2.0/dist/js/boosted.bundle.min.js" integrity="sha384-NkAB+hiFHsv6dxwL0C4lJtfq1RblxY6+DRFn5QZDpgCdwB5RiOGjaJB0Weq0uCy3" crossorigin="anonymous"></script>
+  </body>
+</html>
